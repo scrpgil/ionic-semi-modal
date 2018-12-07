@@ -1,0 +1,17 @@
+<ion-content (click)="close()">
+</ion-content>
+
+<ion-footer padding>
+  <div class="semi-modal-content">
+    <button ion-button icon-only (click)="down()">
+      <ion-icon name="remove"></ion-icon>
+    </button>
+    <div class="counter">
+      {{counter}}
+    </div>
+    <button ion-button icon-only (click)="up()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </div>
+  <button ion-button full color="secondary" (click)="save()">Save</button>
+</ion-footer>
